@@ -12,7 +12,7 @@ export default function Routes() {
     return (
         
         <NavigationContainer>
-            <StatusBar barStyle="light-content" backgroundColor="#00B628" />
+            <StatusBar barStyle="light-content" backgroundColor="#005BA2" />
         
             <AppStack.Navigator headerMode="none">
                 <AppStack.Screen name="Home" component={Home} />               

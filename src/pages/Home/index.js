@@ -16,7 +16,7 @@ export default function Home({ navigation }) {
   return (
     <Container>
       <Header>
-        <Title>Personal Rental Car</Title>
+        <Title>Personal Car Rental</Title>
         <Subtitle>Encontre carros para alugar, ou alugue seu carro.</Subtitle>
       </Header>
 
