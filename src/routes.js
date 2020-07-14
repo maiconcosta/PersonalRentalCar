@@ -7,6 +7,7 @@ const AppStack = createStackNavigator();
 
 import Home from './pages/Home';
 import FindACar from './pages/FindACar';
+import Detail from './pages/Detail';
 
 export default function Routes() {
     return (
@@ -17,6 +18,7 @@ export default function Routes() {
             <AppStack.Navigator headerMode="none">
                 <AppStack.Screen name="Home" component={Home} />               
                 <AppStack.Screen name="FindACar" component={FindACar} />               
+                <AppStack.Screen name="Detail" component={Detail} />               
             </AppStack.Navigator>
 
         </NavigationContainer>

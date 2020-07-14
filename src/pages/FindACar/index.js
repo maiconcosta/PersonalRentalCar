@@ -1,6 +1,5 @@
 import React from 'react';
 import { SimpleLineIcons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
 
 import {
     BackToHome,
@@ -23,9 +22,8 @@ import {
     Value
   } from './styles';
 
-export default function FindACar() {
-    const navigation = useNavigation(); 
-
+export default function FindACar({ navigation }) {
+   
     function handleNavigateBack() {
         navigation.goBack();
     }
@@ -52,7 +50,7 @@ export default function FindACar() {
             <Content>
                 <ContentTitle>7 Resultados Encontrados</ContentTitle>
                 <Cars>
-                    <Car>
+                    <Car onPress={() => navigation.navigate('Detail')}>
                         <Photo source={require('../../assets/fiesta.jpg')}  />
                         <CarContent>
                             <CarTexts>
@@ -63,7 +61,7 @@ export default function FindACar() {
                         </CarContent>                        
                     </Car>
 
-                    <Car>
+                    <Car onPress={() => navigation.navigate('Detail')}>
                         <Photo source={require('../../assets/fiesta.jpg')}  />
                         <CarContent>
                             <CarTexts>
@@ -74,7 +72,7 @@ export default function FindACar() {
                         </CarContent>                        
                     </Car>
 
-                    <Car>
+                    <Car onPress={() => navigation.navigate('Detail')}>
                         <Photo source={require('../../assets/fiesta.jpg')}  />
                         <CarContent>
                             <CarTexts>
@@ -85,7 +83,7 @@ export default function FindACar() {
                         </CarContent>                        
                     </Car>
 
-                    <Car>
+                    <Car onPress={() => navigation.navigate('Detail')}>
                         <Photo source={require('../../assets/fiesta.jpg')}  />
                         <CarContent>
                             <CarTexts>
@@ -96,7 +94,7 @@ export default function FindACar() {
                         </CarContent>                        
                     </Car>
 
-                    <Car>
+                    <Car onPress={() => navigation.navigate('Detail')}>
                         <Photo source={require('../../assets/fiesta.jpg')}  />
                         <CarContent>
                             <CarTexts>
@@ -107,7 +105,7 @@ export default function FindACar() {
                         </CarContent>                        
                     </Car>
 
-                    <Car>
+                    <Car onPress={() => navigation.navigate('Detail')}>
                         <Photo source={require('../../assets/fiesta.jpg')}  />
                         <CarContent>
                             <CarTexts>
