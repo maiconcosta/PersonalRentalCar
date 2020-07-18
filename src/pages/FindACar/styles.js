@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import Constants from 'expo-constants';
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.View`
     background-color: #F5F5F5;
     flex: 1;
  
@@ -9,12 +9,13 @@ export const Container = styled.SafeAreaView`
 
 export const Header = styled.View`
     background: #005BA2;
-    height: 160px;
+    height: auto;
     padding: 22px;
     padding-top: ${Constants.statusBarHeight}px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     justify-content: space-between;
+    z-index: 1;
 `;
 
 export const HeaderTop = styled.View`
@@ -44,27 +45,20 @@ export const HeaderTitle = styled.Text`
 `;
 
 export const LocationBar = styled.View`
-    background: #fff;
-    height: 40px;
+    background: #fff;  
+    height: auto;
     border-radius: 30px;
     margin-top: 10px;
     flex-direction: row;
-    padding: 10px;
+    padding: 6px 10px;
     elevation: 3;
-`;
-
-export const LocationInput = styled.TextInput`
-    flex: 1; 
-    font-family: 'Montserrat_700Bold';
-    font-size: 14px; 
-    margin-left: 5px;
 `;
 
 export const Content = styled.View`
     padding: 22px;
     flex: 1;
+    z-index: 0;    
 `;
-
 
 export const ContentTitle = styled.Text`
     font-family: 'Montserrat_700Bold';
